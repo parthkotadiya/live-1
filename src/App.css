@@ -1,0 +1,505 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.demo1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.demo2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.demo3 {
+  text-decoration: none !important;
+  color: black;
+}
+
+.demo3:hover {
+  color: #c29958;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.demo4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.demo5 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.demo6 {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.demo7 {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+
+.demo8 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.demo8:hover {
+  background-color: #c29958;
+}
+
+.demo9 {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.demo10 {
+  color: #c29958;
+}
+
+.demo10:hover {
+  color: black;
+}
+
+.demo11 {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.demo12:hover .demo13 {
+  background-color: black;
+}
+.demo14{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow1-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  
+}
+.demo15{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow1-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.demo16{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow1-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+.demo17{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-left: -150px;
+}
+.demo18{
+  padding: 5px 30px;
+  background-color: #c29958;
+  border-radius: 30px;
+}
+.demo18:hover{
+  background-color: black;
+}
+.demo19{
+  margin-right: 250px;
+}
+.demo20{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner1-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 545px;
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.demo21{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner1-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 545px;
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.demo22:hover{
+  color: #c29958;
+}
+
+.demo22 {
+  color: black;
+}
+.demo23{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner1-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 545px;
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.demo24{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner1-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 545px;
+  height: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.demo25{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner2-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 290PX;
+  height: 350PX;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+  text-decoration: none !important;
+  color: black !important;
+  
+
+}
+.demo26{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner2-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 290PX;
+  height: 350PX;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+  text-decoration: none !important;
+  color: black !important;
+  
+
+}
+.demo27{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner2-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 290PX;
+  height: 350PX;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+  text-decoration: none !important;
+  color: black !important;
+  
+
+}
+.demo28{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner2-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 290PX;
+  height: 350PX;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+  text-decoration: none !important;
+  color: black !important;
+  
+
+}
+.demo29{
+  display: none;
+}
+.demo25:hover .demo29{display: block;}
+.demo26:hover .demo29{display: block;}
+.demo27:hover .demo29{display: block;}
+.demo28:hover .demo29{display: block;}
+
+.demo31{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}
+.demo32{
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: white;
+  display: none;
+}
+.demo31:hover .demo32{display: inline-block;}
+.demo33:hover .demo32{display: inline-block;}
+.demo34:hover .demo32{display: inline-block;}
+.demo35:hover .demo32{display: inline-block;}
+.demo36:hover .demo32{display: inline-block;}
+.demo37:hover .demo32{display: inline-block;}
+.demo38:hover .demo32{display: inline-block;}
+.demo39:hover .demo32{display: inline-block;}
+
+.demo32:hover{
+  background-color: #c29958;
+  color: white;
+}
+
+.demo33{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}
+.demo34{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}
+.demo35{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}
+.demo36{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}.demo37{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}.demo38{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}.demo39{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/19.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}
+
+.demo40{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/banner3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 540px;
+  height: 426px;
+  display: flex;justify-content: start;align-items: center;
+  padding: 0px 20px ;
+}
+
+.demo41{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow2-1-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.demo42{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow2-2-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo43{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow2-3-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.demo44{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow3-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+.demo45{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow3-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo46{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow3-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.demo47{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow4-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.demo48{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow4-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo49{
+  background-image: url("http://corano.mallthemes.com/wp-content/uploads/2019/04/slideshow4-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+.demo50{
+  padding: 15px 40px;
+  background-color: #c29958;
+  color: white;
+  border-radius: 30px;
+  font-size: larger;
+
+}
+.demo50:hover{
+  color: black;
+}
+
+.demo51{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScnGh10qvS_-rWb7kH1cQPWMZmqVG1mBgtjQ&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  opacity: 0.7;
+  gap: 5px;
+  padding: 20px;
+}
+
