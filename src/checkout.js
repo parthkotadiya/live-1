@@ -8,7 +8,7 @@ function CHECKOUT() {
             <div className="bg-red-400 text-center p-12">
                 <h1 className="text-4xl">Check out</h1>
                 <br />
-                <h1>Home> Check out</h1>
+                <h1>Home - Check out</h1>
 
 
             </div>

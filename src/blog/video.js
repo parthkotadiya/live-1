@@ -8,7 +8,7 @@ function Video(){
         <div className="p-12 bg-red-400 text-center">
             <h1 className="text-4xl">Blog</h1>
             <br />
-            <h1>Home >aigrette>Blog image post (sticky)</h1>
+            <h1>Home - aigrette - Blog image post (sticky)</h1>
 
         </div>
         <div className="container-lg">
