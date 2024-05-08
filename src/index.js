@@ -29,109 +29,121 @@ import Galary from './blog/galary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const router= createBrowserRouter(
+const router = createBrowserRouter(
   [{
-    path:"/my acc",
-    element:<MYACC/>
+    path: "/my acc",
+    element: <MYACC />
   },
   {
-    path:"/",
-    element:<App/>
+    path: "/",
+    element: <App />
 
   },
-{
-  path:"/cart",
-  element: <CART />,
-},
-{
-  path:"/wishlist",
-  element:<WISH/>
-},
-{path:"/checkout",
-element:<CHECKOUT/>
+  {
+    path: "/cart",
+    element: <CART />,
+  },
+  {
+    path: "/wishlist",
+    element: <WISH />
+  },
+  {
+    path: "/checkout",
+    element: <CHECKOUT />
 
-},
-{path:"/H/home-2",
-element:<HOME2/>
+  },
+  {
+    path: "/H/home-2",
+    element: <HOME2 />
 
-},{path:"/bg",
-element:<BLOG/>
+  }, {
+    path: "/bg",
+    element: <BLOG />
 
-},{path:"/about",
-element:<ABOUT/>
+  }, {
+    path: "/about",
+    element: <ABOUT />
 
-},{path:"/shop",
-element:<SHOP/>
+  }, {
+    path: "/shop",
+    element: <SHOP />
 
-},{path:"/contact",
-element:<CONTACT/>
+  }, {
+    path: "/contact",
+    element: <CONTACT />
 
-}
-,{path:"/header",
-element:<HEADER/>
+  }
+    , {
+      path: "/header",
+    element: <HEADER />
 
-},{path:"/footer",
-element:<FOOTER/>
+  }, {
+    path: "/footer",
+    element: <FOOTER />
 
-},
-{
-  path:"/H/home-3",
-  element:<HOME3/>
+  },
+  {
+    path: "/H/home-3",
+    element: <HOME3 />
 
-},
-{
-  path:"/H/home-4",
-  element:<HOME4/>
-}
-,{
-  path:"/G/g",
-  element:<GP/>
+  },
+  {
+    path: "/H/home-4",
+    element: <HOME4 />
+  }
+    , {
+    path: "/G/g",
+    element: <GP />
 
-}
-,{
-  path:"/G/v",
-  element:<VP/>
+  }
+    , {
+    path: "/G/v",
+    element: <VP />
 
-}
-,{
-  path:"/G/s",
-  element:<SP/>
+  }
+    , {
+    path: "/G/s",
+    element: <SP />
 
-}
-,{
-  path:"/G/e",
-  element:<EP/>
+  }
+    , {
+    path: "/G/e",
+    element: <EP />
 
-}
-,{
-  path:"/blog/audio",
-  element:<Audio/>
+  }
+    , {
+    path: "/blog/audio",
+    element: <Audio />
 
-}
-,{
-  path:"/blog/video",
-  element:<Video/>
+  }
+    , {
+    path: "/blog/video",
+    element: <Video />
 
-}
-,{
-  path:"/blog/galary",
-  element:<Galary/>
+  }
+    , {
+    path: "/blog/galary",
+    element: <Galary />
 
-}
-,{
-  path:"/blog/image",
-  element:<Image/>
+  }
+    , {
+    path: "/blog/image",
+    element: <Image />
 
-}
+  },
+  {
+    path: "/home",
+    element: <HOME />
+  }
 
-]
+  ]
 )
 
 root.render(
   <React.StrictMode>
-   <RouterProvider router={router}>
-    <App/>
-   </RouterProvider>
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   </React.StrictMode>
 );
 

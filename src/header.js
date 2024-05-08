@@ -76,11 +76,14 @@ function HEADER() {
                     <input type="search" placeholder='Search' className="border-2 border-black rounded-[20px] text-center h-[44px] " />
                 </div>
                 <div className="demo5">
-
-                    <img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" width="30px" height="30px" />
-                    <img src="https://cdn-icons-png.flaticon.com/128/6874/6874008.png" width="30px" height="30px" />
+                    <a href="/my acc" >
+                        <img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" width="30px" height="30px" />
+                    </a>
+                    <a href="/wishlist">
+                        <img src="https://cdn-icons-png.flaticon.com/128/6874/6874008.png" width="30px" height="30px" />
+                    </a>
                     <a href="/cart" >
-                         <img src="https://cdn-icons-png.flaticon.com/128/2838/2838838.png" width="30px" height="30px" />
+                        <img src="https://cdn-icons-png.flaticon.com/128/2838/2838838.png" width="30px" height="30px" />
                     </a>
                 </div>
 

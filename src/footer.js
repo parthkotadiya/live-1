@@ -30,11 +30,11 @@ function FOOTER() {
                     <div>
                         <h2>Information</h2>
                         <br />
-                        <a href="#" >About Us</a>
+                        <a href="/about" >About Us</a>
                         <br />
-                        <a href="#" >Contact</a>
+                        <a href="/contact" >Contact</a>
                         <br />
-
+ 
                         <a href="#" >Privacy Policy</a>
                         <br />
 
@@ -87,6 +87,7 @@ function FOOTER() {
                         <img src="http://corano.mallthemes.com/wp-content/uploads/2019/04/img-payment.png" />
                     </div>
                 </div>
+                <br/>
             </div>
         </>
     )

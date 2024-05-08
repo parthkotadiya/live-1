@@ -284,14 +284,8 @@
 .demo28:hover .demo29{display: block;}
 
 .demo31{
-  background-image: url("../assets/1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
+height: 450px;
+border: 1px solid black;
 
 }
 .demo32{
@@ -301,83 +295,16 @@
   display: none;
 }
 .demo31:hover .demo32{display: inline-block;}
-.demo33:hover .demo32{display: inline-block;}
-.demo34:hover .demo32{display: inline-block;}
-.demo35:hover .demo32{display: inline-block;}
-.demo36:hover .demo32{display: inline-block;}
-.demo37:hover .demo32{display: inline-block;}
-.demo38:hover .demo32{display: inline-block;}
-.demo39:hover .demo32{display: inline-block;}
 
 .demo32:hover{
   background-color: #c29958;
   color: white;
 }
 
-.demo33{
-  background-image: url("../assets//2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
 
-}
-.demo34{
-  background-image: url("../assets/3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
 
-}
-.demo35{
-  background-image: url("../assets/4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
 
-}
-.demo36{
-  background-image: url("../assets/5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-
-}.demo37{
-  background-image: url("../assets/6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-
-}.demo38{
-  background-image: url("../assets/7.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 262px;
-  height: 262px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-
-}.demo39{
+ .demo39{
   background-image: url("http://corano.mallthemes.com/wp-content/uploads/2018/11/19.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -501,5 +428,8 @@
   opacity: 0.7;
   gap: 5px;
   padding: 20px;
+}
+.demo53{
+  display: none;
 }
 

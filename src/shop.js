@@ -1,9 +1,20 @@
 import { useMemo, useState } from "react";
 import FOOTER from "./footer";
 import HEADER from "./header";
-import Image from './blog/image';
+import { useNavigate } from "react-router-dom";
+import React from "react";
 
 function SHOP() {
+    const navigate = useNavigate()
+    const [id, setId] = useState();
+    console.log(id);
+
+    const Id = (item) => {
+        setId(parseInt(item.id));
+        navigate("/home")
+        localStorage.setItem("productid", JSON.stringify(item.id))
+    };
+
     const [products, setProducts] = useState([])
     const [value, setValue] = useState({})
     const [datas] = useState([localStorage.setItem("live", JSON.stringify(value))])
@@ -21,7 +32,36 @@ function SHOP() {
             })
     }, [])
     console.log(products);
+    const grid = () => {
+        document.getElementById("demo53").style.display = 'none'
+        document.getElementById("demo52").style.display = 'block'
 
+    }
+    const list = () => {
+        document.getElementById("demo52").style.display = 'none'
+
+        document.getElementById("demo53").style.display = 'block'
+
+    }
+    const p1 = () => {
+        const sortedProducts = [...products].sort((a, b) => a.value - b.value);
+        setProducts(sortedProducts);
+    }
+
+    const p2 = () => {
+        const sortedProducts = [...products].sort((a, b) => b.value - a.value);
+        setProducts(sortedProducts);
+
+    }
+    const ring = () => {
+        const ringProducts = products.filter(item => item.type === "ring");
+        setProducts(ringProducts)
+    }
+
+    const diamond = () => {
+        const dia = products.filter(item => item.type === "diamond");
+        setProducts(dia)
+    }
     return (
         <>
             <HEADER />
@@ -31,120 +71,85 @@ function SHOP() {
                     <h1>Home  -  Shop</h1>
                 </div>
             </div>
-            <div className='container-lg flex justify-center gap-5'>
-                <div className='text-center'>
-                    <div className='demo31'  >
-                        <button type='button' name="value" onClick={(e) => add(e)} value={78} className='demo32' >Add to Cart</button>
+            <br />
+            <div className="container-lg bg-yellow-400 p-4 flex justify-around gap-5">
+                <div className="flex justify-between gap-5">
+                    <button type="button" onClick={grid} ><img src="https://cdn-icons-png.flaticon.com/128/3603/3603178.png" width={50} height={50} /></button>
+                    <button type="button" onClick={list} ><img src="https://cdn-icons-png.flaticon.com/128/151/151917.png" width={50} height={50} /></button>
+                </div>
+                <div>
+                    <div className="dropdown">
+                        <button type="button" classname="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            sorting
+                        </button>
+                        <div className="dropdown-menu">
+                            <a className="dropdown-item" href="#" onClick={p1}>price low to high</a>
+                            <a className="dropdown-item" href="#" onClick={p2} >price high to low</a>
+                            <a className="dropdown-item" href="#" onClick={ring} >rings</a>
+                            <a className="dropdown-item" href="#" onClick={diamond} >diamonds</a>
+
+
+                        </div>
                     </div>
-                    <br />
-                    <div>
-                        <ul>
-                            {products.map(item => (
-                                <li key={item.id}>
-                                    <strong>{item.name}</strong> 
+                </div>
+
+            </div>
+
+            <div className="container" id="demo52" >
+                <br />
+                <ul className="flex justify-center gap-20 flex-wrap text-center  "  >
+                    {products.map(item => (
+                        <li key={item.id} className="demo31" onClick={() => Id(item)} >
+                            {item.id}
+                            <img src={item.image} width={300} height={200} />
+                            <strong>{item.name}</strong>
+                            <br />
+                            {item.dis}
+                            <br />
+                            {item.value}
+                            <br />
+                            <button type='button' name="value" onClick={(e) => add(e)} value={78} className='demo32' >Add to Cart</button>
+
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="container demo53" id="demo53">
+                <br />
+                <ul className="flex justify-center gap-20 flex-wrap text-center  "  >
+                    {products.map(item => (
+                        <li key={item.id} onClick={() => Id(item)} >
+                            <div className="flex justify-center gap-10 demo31 p-5" >
+                                <div>
+
+                                    <img src={item.image} width={300} height={200} />
+                                </div>
+                                <div className="text-start">
+                                    <strong>{item.name}</strong>
+
+                                    <br />
                                     {item.dis}
-                                    { <img src={item.image} /> }
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                                    <br />
+                                    <div className="flex justify-start">
+                                        <p className="w-[600px]">  {item.pg}</p>
+                                    </div>
+                                    <br />
+                                    {item.value}
+                                    <br />
+                                    <button type='button' name="value" onClick={(e) => add(e)} value={78} className='demo32' >Add to Cart</button>
 
+                                </div>
+                            </div>
 
-
-                </div>
-                <div className='text-center'>
-                    <div className='demo33'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={79} className='demo32' >Add to Cart</button>
-
-                    </div>
-                    <br />
-                    <h1>{products[1]?.name}</h1>
-                    <h1 className='demo22'>{products[1]?.dis}</h1>
-                    <h1> $ {products[1]?.value}</h1>
-
-
-                </div>
-
-                <div className='text-center'>
-                    <div className='demo34'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={80} className='demo32' >Add to Cart</button>
-
-                    </div>
-                    <br />
-                    <h1>product 3</h1>
-                    <h1 className='demo22'>Diamond Jewelery 3</h1>
-                    <h1>$ 78.00</h1>
-
-
-                </div>
-
-
-                <div className='text-center'>
-                    <div className='demo35'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={81} className='demo32' >Add to Cart</button>
-
-                    </div>
-                    <br />
-                    <h1>product 4</h1>
-                    <h1 className='demo22'>Diamond Jewelery 4</h1>
-                    <h1>$ 78.00</h1>
-                </div>
-
-
-
+                        </li>
+                    ))}
+                </ul>
             </div>
-            <br />
-            <br />
-            <div className='container-lg flex justify-center gap-5'>
-                <div className='text-center'>
-                    <div className='demo36'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={82} className='demo32' >Add to Cart</button>
-                    </div>
-                    <br />
-                    <h1>product 5</h1>
-                    <h1 className='demo22'>Diamond Jewelery 5</h1>
-                    <h1>$ 78.00</h1>
-                </div>
-
-
-
-                <div className='text-center'>
-                    <div className='demo37'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={83} className='demo32' >Add to Cart</button>
-                    </div>
-                    <br />
-                    <h1>product 6</h1>
-                    <h1 className='demo22'>Diamond Jewelery 6</h1>
-                    <h1>$ 78.00</h1>
-                </div>
-
-
-                <div className='text-center'>
-                    <div className='demo38'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={84} className='demo32' >Add to Cart</button>
-                    </div>
-                    <br />
-                    <h1>product 7</h1>
-                    <h1 className='demo22'>Diamond Jewelery 7</h1>
-                    <h1>$ 78.00</h1>
-                </div>
-
-
-                <div className='text-center'>
-                    <div className='demo39'>
-                        <button type='button' name="value" onClick={(e) => add(e)} value={85} className='demo32' >Add to Cart</button>
-                    </div>
-                    <br />
-                    <h1>product 8</h1>
-                    <h1 className='demo22'>Diamond Jewelery 8</h1>
-                    <h1>$ 78.00</h1>
-                </div>
 
 
 
 
-            </div>
-           
             <FOOTER />
         </>
     )
